@@ -26,9 +26,12 @@ export default function App() {
           </ul>
 
           <Switch>
-            <Route path="/about" element={ <About />} />
-            <Route path="/topics" element={<Topics />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/about" ><About />
+          </Route>
+            <Route path="/topics" ><Topics />
+          </Route>
+            <Route path="/"><Home />
+          </Route>
           </Switch>
         </div>
     </Router>
